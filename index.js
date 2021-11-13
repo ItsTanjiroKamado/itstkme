@@ -2,13 +2,9 @@ const e = require('express');
 const app = e();
 const log = console.log;
 const port = process.env.PORT;
-const chalk = require("chalk");
-const method = chalk.green;
-const iplog = chalk.red;
-const path = chalk.yellow
 
 app.use((req, res, next) => {
-    log(method(`${req.method}`) + `-` + path(`${req.path}`) + iplog(`${req.ip}`));
+    log(`${req.method} - ${req.path} - ${req.ip}`);
     next();
 })
 app.use(e.static(__dirname + '/static'))
