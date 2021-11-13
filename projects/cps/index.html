@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn.itstk.me/circle.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ItsTanjiroKamado">
+  <meta property="og:title" content="ItsTanjiroKamado">
+  <meta property="og:description" content="CPS TEST page of ItsTanjiroKamado">
+  <meta property="og:image" content="https://us.123rf.com/450wm/aspi13/aspi131907/aspi13190700055/127824695-cursor-mouse-click.jpg?ver=6">
+  <meta name="theme-color" content="#fc0a5e"/>
+    <title>CPS TEST</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul>
+  <li><a href="https://itstk.me/">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects ⬇</a>
+    <div class="dropdown-content">
+      <a href="https://itstk.me/projects/home">Home Page</a>
+      <a href="https://itstk.me/projects/texturepacks/">Texture Packs</a>
+      <a href="https://itstk.me/projects/cdn">CDN</a>
+      <a href="https://404.itstk.me">404</a>
+      <a href="https://itstk.me/projects/cps">CPS</a>
+    </div>
+
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Helpers ⬇</a>
+    <div class="dropdown-content">
+      <a href="https://itstk.me/landwarderer">Land Warderer 2772</a>
+    </div>
+  </li>
+</ul>
+
+<!-- partial:index.partial.html -->
+<main x-data="clickSpeedTest()" x-init="restart()">
+  <header>
+    <p> <span><abbr title="Clicks Per Second">CPS</abbr></span><br/><b x-text="cpsDisplay"></b></p>
+    <div></div>
+    <p> <span>CPS MAX</span><br/><b x-text="cpsMaxDisplay"></b></p>
+  </header>
+  <button x-ref="btn" @mousedown="mouseDown" @mouseup="mouseUp" :style="`--cps: ${cps}`"></button>
+  <footer>
+    <p> <span>Clicks</span><br/><b x-text="clicks"></b></p>
+    <div></div>
+    <p> <span>Time</span><br/><b x-text="activeTimeDisplay"></b><sub>s</sub></p>
+  </footer>
+</main>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js'></script><script  src="./script.js"></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('itstk', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'donate k',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+</body>
+</html>

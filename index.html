@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.itstk.me/circle.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ItsTanjiroKamado">
+  <meta property="og:title" content="ItsTanjiroKamado">
+  <meta property="og:description" content="Homepage of ItsTanjiroKamado">
+  <meta property="og:image" content="https://i.imgur.com/ZB5sr0n.jpg">
+  <meta name="theme-color" content="#fc0a5e"/>
+    <title>ItsTanjiroKamado</title>
+</head>
+<body onload="loader()" style="margin:0;">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul id="myDiv4">
+  <li><a href="https://itstk.me/">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects ⬇</a>
+    <div class="dropdown-content">
+      <a href="https://itstk.me/projects/home">Home Page</a>
+      <a href="https://itstk.me/projects/texturepacks/">Texture Packs</a>
+      <a href="https://itstk.me/projects/cdn">CDN</a>
+      <a href="https://404.itstk.me">404</a>
+      <a href="https://itstk.me/projects/cps">CPS</a>
+    </div>
+
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Helpers ⬇</a>
+    <div class="dropdown-content">
+      <a href="https://itstk.me/landwarderer">Land Warderer 2772</a>
+    </div>
+  </li>
+</ul>
+<div id="loader" class="loader centering"></div>
+    <div id="myDiv" class="top">
+      
+        <h1>Its<span class="purple">T</span>anjiro<span class="purple">K</span>amado.</h1>
+    <p>amateur minecraft player, bad coder, makes music and listens to music too, also can draw. everyone knows me as inderT</p>
+    <p>current spotify playlist: <a href="https://itstk.me/spotify/current-playlist">finally, some f-ing good songs</a></p>
+    </div>
+    <div id="myDiv3" class="underline"></div>
+    <div id="myDiv2" class="buttons">
+        <a href="https://itstk.me/github" >
+            <i class='bx bxl-github github'></i>
+        </a>
+        <a href="https://itstk.me/discord" >
+            <i class='bx bxl-discord-alt discord' ></i>
+        </a>
+        <a href="https://itstk.me/twitch">
+            <i class='bx bxl-twitch twitch' ></i>
+        </a>
+        <a href="https://itstk.me/spotify" >
+            <i class='bx bxl-spotify spotify' ></i>
+        </a>
+      <script src="script.js"></script>
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('itstk', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'donate k',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+var myVar;
+
+function loader() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("myDiv2").style.display = "flex";
+  document.getElementById("myDiv3").style.display = "flex";
+  document.getElementById("myDiv4").style.display = "flex";
+}
+</script>
+    </div>
+</body>
+</html>
