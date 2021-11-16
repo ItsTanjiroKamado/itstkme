@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*{
+  font-family: 'Happy Monkey', cursive;
+}
+
+@keyframes slideein{
+  0%{
+    font-size: 0px;
+  }
+  30%{
+    font-size: 50px;
+  }
+  40%{
+    font-size: 50px;
+  }
+  50%{
+    font-size: 50px;
+  }
+  60%{
+    font-size: 50px;
+  }
+  70%{
+    font-size: 50px;
+    transform: rotate(0deg);
+  }
+  100%{
+    font-size: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.youjustgot{
+  animation-name: slideein;
+  animation-duration: 2s;
+  font-size: 0px;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+*{
+  overflow: none;
+}
+
+.justgotfofed{
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    font-size: 100px;
+    width: 100%;
+    display: none;
+}
+
+.mlg-snoop-dogg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.mlg-swagg-boi {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.mlg-no-scope {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.mlg-rekt-scrub {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mlg-chicken {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.mlg-dorito {
+  position: fixed;
+  right: -100px;
+  top: 10px;
+}
+.illuminati-confirmed {
+  position: fixed;
+  top: 200px;
+  left: 0;
+}
+
+.mlg{
+  display: none;
+}
